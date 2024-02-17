@@ -1,11 +1,7 @@
 ---
-date: 2024-02-07
-week: 2
-time:
-  - task: "[[Initial Ideas]]"
-    time: 1.25 hours
-    progress: 20
+{"publish":true,"path":"2024-02-07 Initial Project Ideas Form.md","permalink":"/2024-02-07-initial-project-ideas-form/"}
 ---
+
 Date: Wednesday, Feb 7, 2024
 # Work Undertaken Summary
 - Decide on which project idea to progress
@@ -14,17 +10,10 @@ Date: Wednesday, Feb 7, 2024
 Not Applicable
 
 # Time Spent
-```dataview
-TABLE WITHOUT ID
-link(meta(entry.task.top-level-task).subpath) As "Top Level",
-entry.task as "Second Level",
-entry.time As "Time",
-entry.progress as "Progress (%) this week est"
-WHERE time != null
-WHERE file = this.file
-flatten time as entry
-sort date desc
-```
+| Top Level                        | Second Level                                            | Time               | Progress (%) this week est |
+| -------------------------------- | ------------------------------------------------------- | ------------------ | -------------------------- |
+| [[Project Setup\|Project Setup]] | [[Tasks/Project Setup/Initial Ideas\|Initial Ideas]] | 1 hour, 15 minutes | 20                         |
+
 
 # Questions for Tutor
 Thoughts on the idea.
@@ -34,7 +23,23 @@ TMA01 Tutorial
 
 # Raw Notes
 
-![[2024-01-14 Project Ideas#Reasoning]]
+
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+# Reasoning
+I am prefering the LLM project because:
+
+1) Requires learning a new domain / skill - more to write about
+2) Requires academic reading
+3) Requires more analysis, e.g. comparing results against each other.
+4) Useful for work, social benefit there
+5) Can be turned into a work knowledge share / talk
+6) Has clear stakeholders
+
+</div></div>
+
 
 ## Document
 Please complete the following template and email it back to me
