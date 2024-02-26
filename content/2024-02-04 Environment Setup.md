@@ -1,14 +1,7 @@
 ---
-date: 2024-02-04
-week: 7
-time:
-  - task: "[[Dev Environment]]"
-    time: 5 hours
-    progress: 35
-  - task: "[[Technical Documentation]]"
-    time: 3 hours
-    progress: 10
+{"publish":true,"path":"2024-02-04 Environment Setup.md","permalink":"/2024-02-04-environment-setup/"}
 ---
+
 Date: Sunday, February 4, 2024
 # Work Undertaken Summary
 - Research current state of running LLM locally
@@ -46,17 +39,13 @@ The resulting config files have been published on github [LukeThoma5/ollama-arch
 
 
 # Time Spent
-```dataview
-TABLE WITHOUT ID
-link(meta(entry.task.top-level-task).subpath) As "Top Level",
-entry.task as "Second Level",
-entry.time As "Time",
-entry.progress as "Progress (%) this week est"
-WHERE time != null
-WHERE file = this.file
-flatten time as entry
-sort date desc
-```
+| Top Level                                | Second Level                                                             | Time                | Progress (%) this week est |
+| ---------------------------------------- | ------------------------------------------------------------------------ | ------------------- | -------------------------- |
+| [[Environment Setup\|Environment Setup]] | [[Tasks/Environment Setup/Server OS Install\|Server OS Install]]      | 2 hours, 30 minutes | 80                         |
+| [[Environment Setup\|Environment Setup]] | [[Tasks/Environment Setup/Ollama install\|Ollama install]]            | 2 hours, 30 minutes | 100                        |
+| [[Research\|Research]]                   | [[Tasks/Research/Technical Documentation\|Technical Documentation]]   | 1 hour, 30 minutes  | 10                         |
+| [[Design\|Design]]                       | [[Tasks/Design/Top Level Design Research\|Top Level Design Research]] | 1 hour, 30 minutes  | 50                         |
+
 
 # Questions for Tutor
 Not Applicable
@@ -120,7 +109,7 @@ docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --name ollama ol
 docker exec -it ollama ollama run llama2
 ```
 
-![[disable-igpu.png]]
+![disable-igpu.png](/img/user/media/disable-igpu.png)
 [Run ollama with an AMD GPU on Arch — blog.rabu.me](https://blog.rabu.me/ollama-running-on-an-amd-gpu/)
 
 [WSL 2 GPU Support is Here | Docker](https://www.docker.com/blog/wsl-2-gpu-support-is-here/)
