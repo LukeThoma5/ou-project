@@ -10,9 +10,9 @@ Date: Wednesday, Feb 7, 2024
 Not Applicable
 
 # Time Spent
-| Top Level                        | Second Level                                            | Time               | Progress (%) this week est |
-| -------------------------------- | ------------------------------------------------------- | ------------------ | -------------------------- |
-| [[Project Setup\|Project Setup]] | [[Tasks/Project Setup/Initial Ideas\|Initial Ideas]] | 1 hour, 15 minutes | 20                         |
+| Top Level        | Second Level                                          | Time               | Progress (%) this week est |
+| ---------------- | ----------------------------------------------------- | ------------------ | -------------------------- |
+| [[TMA01\|TMA01]] | [[Tasks/TMA01/Project Proposal\|Project Proposal]] | 1 hour, 15 minutes | 20                         |
 
 
 # Questions for Tutor
@@ -24,7 +24,7 @@ TMA01 Tutorial
 # Raw Notes
 
 
-<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/2024-01-14-project-ideas/#reasoning" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
 
 
