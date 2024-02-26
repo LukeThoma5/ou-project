@@ -1,5 +1,0 @@
-# Project Setup
-
-# Admin
-
-# Research
