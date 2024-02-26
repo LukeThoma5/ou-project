@@ -7,26 +7,30 @@ Date: Tuesday, February 13, 2024
 - Document Logbook choices
 - Setup Logbook
 - Setup Timesheet + reporting
-
-TODO look if I can get the dataview to work when published: [Support for Dataview JS Snippets · Issue #102 · jackyzha0/quartz (github.com)](https://github.com/jackyzha0/quartz/issues/102)
-[Using Dataview on Obsidian Publish · joschua.io](https://joschua.io/posts/2023/09/01/obsidian-publish-dataview/)
-
+- Setup Quartz (publish the notes)
+- Fix DataView on publish
 # Problems encountered and how you overcame them
-Had to learn how DataView works. Especially around the complex object for the time property. Was able to get it to work using the examples provided by [Dataview (blacksmithgu.github.io)](https://blacksmithgu.github.io/obsidian-dataview/)
+Had to learn how DataView works. Especially the edges of the query language to enable queries around the complex object for the time property. Was able to get it to work using the examples provided by [Dataview (blacksmithgu.github.io)](https://blacksmithgu.github.io/obsidian-dataview/)
 [seburbandev/obsidian-dataview-cheatsheet: This cheatsheet provides a handy reference guide for writing powerful queries using the dataview plugin in Obsidian. (github.com)](https://github.com/seburbandev/obsidian-dataview-cheatsheet)
 
+Publishing straight using quartz has the problem that the dataview plugin isn't executed during publish. So what is published is the raw query rather than the results of the query. Which is not useful for sharing with my tutor.
+
+Thankfully this week a new tool called quartz-syncer was released that allows the queries to be run and baked in prior to publishing.
+
 # Time Spent
-| Top Level                        | Second Level                                  | Time                | Progress (%) this week est |
-| -------------------------------- | --------------------------------------------- | ------------------- | -------------------------- |
-| [[Project Setup\|Project Setup]] | [[Tasks/Project Setup/Log Book\|Log Book]] | 7 hours, 30 minutes | 5                          |
-| [[Admin\|Admin]]                 | [[Tasks/Admin/Tutorials\|Tutorials]]       | 3 hours             | 0                          |
+| Top Level                                    | Second Level                                                          | Time               | Progress (%) this week est |
+| -------------------------------------------- | --------------------------------------------------------------------- | ------------------ | -------------------------- |
+| [[TMA01\|TMA01]]                             | [[Tasks/TMA01/Log Book\|Log Book]]                                 | 6 hours            | 80                         |
+| [[TMA01\|TMA01]]                             | [[Tasks/TMA01/Blog Setup\|Blog Setup]]                             | 3 hours            | 100                        |
+| [[Recurring Tasks\|Recurring Tasks]]         | [[Tasks/Recurring Tasks/Tutorials\|Tutorials]]                     | 3 hours            | 20                         |
+| [[Data Transformation\|Data Transformation]] | [[Tasks/Data Transformation/Retrieve Database\|Retrieve Database]] | 1 hour, 30 minutes | 100                        |
 
 
 # Questions for Tutor
-
+N/A
 
 # Next work planned
-
+TMA01
 
 # Raw Notes
 ## Log book
@@ -60,6 +64,21 @@ Talk about emailing every 2 weeks. High level what did I achieve and what the ne
 
 TODO make a template.
 
+## Obsidian Publish
+Obsidian publish doesn't natively support
+
+[Support for Dataview JS Snippets · Issue #102 · jackyzha0/quartz (github.com)](https://github.com/jackyzha0/quartz/issues/102)
+
+#choice I am using cloudflare pages as its free and I already have a domain setup with cloudflare.
+
+#choice I am using quartz as its free and self hostable, doesn't require obsidians paid subscription.
+
+### Publish Problems
+Publishing straight using quartz has the problem that the dataview plugin isn't executed during publish. So what is published is the raw query rather than the results of the query. Which is not useful for sharing with my tutor.
+
+Thankfully only this week github user saberzero1 published a tool to allow the queries to be run and "baked" into the website.
+
+[saberzero1/quartz-syncer: Markdown publisher for Quartz with Dataview support. (github.com)](https://github.com/saberzero1/quartz-syncer)
 
 ## What is the artefact
 The core artefact is the specification. Which due to IP reasons cannot be shared in its entirety.
@@ -69,6 +88,27 @@ The artefact is:
 3) The code required to analyse the specifications
 4) The tables/graphs to explain the analysis
 5) The analysis discussion
+
+## Importing the data
+Exported a bacpac from sql azure. Ran into a problem with importing it locally as my sql server instance didn't have contained database authentication enabled (which we use for replicating the production db / fail overs.)
+![Pasted image 20240218184508.png](/img/user/media/Pasted%20image%2020240218184508.png)
+
+[Enable SQL Server Contained Database Authentication (kodyaz.com)](https://www.kodyaz.com/sql-server-2014/enable-contained-database-authentication-on-sql-server.aspx)
+
+fixed by
+```SQL
+sp_configure 'contained database authentication', 1  
+reconfigure
+```
+```
+Configuration option 'contained database authentication' changed from 0 to 1. Run the RECONFIGURE statement to install.
+
+Completion time: 2024-02-18T18:45:49.8038654+00:00
+
+```
+## Bibliography
+[Using Dataview on Obsidian Publish · joschua.io](https://joschua.io/posts/2023/09/01/obsidian-publish-dataview/)
+
 
 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
@@ -104,6 +144,9 @@ Use Colour Coding. Maybe have a % system. and colour code based on that.
 ![Pasted image 20240211083532.png](/img/user/tutorials/media/Pasted%20image%2020240211083532.png)
 Have lots of little subtasks, makes it easy to carry out.
 
+This is talking about phases and tasks [Planning and Organising a Project | OU online (open.ac.uk)](https://learn2.open.ac.uk/mod/oucontent/view.php?id=2217339)
+
+
 ![Pasted image 20240211083938.png](/img/user/tutorials/media/Pasted%20image%2020240211083938.png)
 Amanda strongly recommends going to the using the library lecture, 28th Febb.
 
@@ -117,7 +160,7 @@ MS Word can format references for you?!?
 ![Pasted image 20240211084811.png](/img/user/tutorials/media/Pasted%20image%2020240211084811.png)
 Amanada suggests contacting once a fortnight, with a briefing of where you are up to.
 
-**YOU ARE MARKED ON IF YOU ARE ENGAGING WITH YOUR TUTOR**
+YOU ARE MARKED ON IF YOU ARE ENGAGING WITH YOUR TUTOR
 
 ![Pasted image 20240211085042.png](/img/user/tutorials/media/Pasted%20image%2020240211085042.png)
 ![Pasted image 20240211085316.png](/img/user/tutorials/media/Pasted%20image%2020240211085316.png)
@@ -143,11 +186,18 @@ They don't check their emails every day. They check them every couple of days.
 ![Pasted image 20240213103416.png](/img/user/tutorials/media/Pasted%20image%2020240213103416.png)
 Blended project, Its going to be a development (make the llm, train etc) and evaluation project
 ![Pasted image 20240213104257.png](/img/user/tutorials/media/Pasted%20image%2020240213104257.png)
-# TODO
-Put the stuff into the current format
-Finish the video, timestamp 35:20
 Time for today:
 35:20 watching tutorial
 4.5 hours of setting up stuff with data view.
 
+# Project Plan
+Gives you aims.
+
+![Pasted image 20240221134215.png](/img/user/tutorials/media/Pasted%20image%2020240221134215.png)
+Other things: America trip, concerts.
+
+
+
 </div></div>
+
+
