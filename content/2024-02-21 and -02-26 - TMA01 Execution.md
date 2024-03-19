@@ -1,7 +1,7 @@
 ---
-{"publish":true,"path":"2024-02-21 and -02-26 - TMA01 Execution.md","permalink":"/2024-02-21-and-02-26-tma-01-execution/"}
+date: 2024-02-21
+week: 8
 ---
-
 Date: Wednesday, February 21, 2024
 # Work Undertaken Summary
 - Setup Remote Desktop to Server
@@ -16,18 +16,30 @@ Date: Wednesday, February 21, 2024
 Mostly Assignment Work this week.
 
 # Time Spent
-| Top Level                                | Second Level                                                                     | Time               | Progress (%) this week est |
-| ---------------------------------------- | -------------------------------------------------------------------------------- | ------------------ | -------------------------- |
-| [[Environment Setup\|Environment Setup]] | [[Tasks/Environment Setup/Server OS Install\|Server OS Install]]              | 30 minutes         | 5                          |
-| [[Recurring Tasks\|Recurring Tasks]]     | [[Tasks/Recurring Tasks/Tutorials\|Tutorials]]                                | 30 minutes         | 5                          |
-| [[TMA01\|TMA01]]                         | [[Tasks/TMA01/Project Schedule\|Project Schedule]]                            | 5 hours            | 60                         |
-| [[TMA01\|TMA01]]                         | [[Tasks/TMA01/Lifecycle Selection\|Lifecycle Selection]]                      | 3 hours            | 60                         |
-| [[TMA01\|TMA01]]                         | [[Tasks/TMA01/Write Assignment\|Write Assignment]]                            | 1 hour, 36 minutes | 5                          |
-| [[Research\|Research]]                   | [[Tasks/Research/Complete a literature search\|Complete a literature search]] | 15 minutes         | 5                          |
-| [[Recurring Tasks\|Recurring Tasks]]     | [[Tasks/Recurring Tasks/Bi Weekly tutor Updates\|Bi Weekly tutor Updates]]    | 30 minutes         | 5                          |
-| [[TMA01\|TMA01]]                         | [[Tasks/TMA01/Log Book\|Log Book]]                                            | 1 hour             | 10                         |
-
-
+  - task: "[[Server OS Install]]"
+    time: 0.5 hours
+    progress: 5
+  - task: "[[Tutorials]]"
+    time: 0.5 hours
+    progress: 5
+  - task: "[[Project Schedule]]"
+    time: 5 hours
+    progress: 60
+  - task: "[[Lifecycle Selection]]"
+    time: 3 hours
+    progress: 60
+  - task: "[[Write Assignment]]"
+    time: 1.6 hours
+    progress: 5
+  - task: "[[Complete a literature search]]"
+    time: 0.25 hours
+    progress: 5
+  - task: "[[Bi Weekly tutor Updates]]"
+    time: 0.5 hours
+    progress: 5
+  - task: "[[Log Book]]"
+    time: 1 hours
+    progress: 10
 # Questions for Tutor
 N/A
 # Next work planned
@@ -149,8 +161,8 @@ Have top level tasks for the TMA's. E.g each TMA can be a phase.
 	- Create charts
 	- Writeup recommendations and interpretation
 
-TODO continue from here: [Planning and Organising a Project: 4.3 Tasks | OU online (open.ac.uk)](https://learn2.open.ac.uk/mod/oucontent/view.php?id=2217339&section=4.3)
-Continue filling out the task list.
+- [x] TODO continue from here: [Planning and Organising a Project: 4.3 Tasks | OU online (open.ac.uk)](https://learn2.open.ac.uk/mod/oucontent/view.php?id=2217339&section=4.3)
+- [x] Continue filling out the task list.
 
 
 # LO9
@@ -200,7 +212,7 @@ When discussing the choice of lifecycle refer back to [Choosing a Lifecycle Mode
 ## Classic Waterfall
 Royce, W.W. (1970) ‘Managing the development of large software systems’, _Proceedings of the IEEE WESCON_, vol. 26, pp. 1–9.
 
-![waterfall.png](/img/user/media/waterfall.png)
+![[waterfall.png]]
 
 Waterfall is inappropriate because:
 - The project is in an unfamiliar domain, so upfront analysis and design aren't possible
@@ -211,7 +223,7 @@ Waterfall is inappropriate because:
 
 While it allows for iteration and for backwards steps, it prioritizes minimizing backwards stepping, especially over more than 1 step. Which does not match the fact that I am going to need to do many loops of design/implementation/evaluation.
 
-![iterative waterfall.png](/img/user/media/iterative%20waterfall.png)
+![[iterative waterfall.png]]
 
 ## Prototyping
 Could be useful, but incremental delivery might be a better shout.
@@ -222,7 +234,7 @@ Could be useful, but incremental delivery might be a better shout.
 - throwaway prototyping - prototype is developed as a stepping stone to a final product
 
 ## User-centred lifecycle model
-![user-centred-lifecycle.png](/img/user/media/user-centred-lifecycle.png)
+![[user-centred-lifecycle.png]]
 
 While building an incrementally improved prototype fits my expected outcome, I don't think "discovering requirements" quite fits the iteration I will be doing. The iteration is more likely to be guiding the AI on important aspects / unimportant aspects.
 
@@ -234,7 +246,7 @@ Therefore my lifecycle should be **iterative** as its building a system to creat
 
 A large part of the work will be tuning rather than incremental features.
 
-![scrum-lifecycle.png](/img/user/media/scrum-lifecycle.png)
+![[scrum-lifecycle.png]]
 
 The project can only be split into a couple of pieces, these pieces can't be enhanced only tuned to produce a better outcome. therefore the result of each sprint wouldn't be a potentially shippable increment and so 
 
@@ -289,7 +301,7 @@ Spiral best matches my development philosophy and the requirements of the projec
 - **medium likelihood**: it would be disappointing but not surprising if it occurred
 - **high likelihood**: it will very probably prove to be the case.
 
-![Risk Combination Table.png](/img/user/media/Risk%20Combination%20Table.png)
+![[Risk Combination Table.png]]
 
 ## Project Schedule
 Have completed work schedule. Have left some slack space (about 5 weeks worth) for the inevitable slippage of the project.

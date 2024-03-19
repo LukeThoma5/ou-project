@@ -1,7 +1,7 @@
 ---
-{"publish":true,"path":"2024-01-14 Project Ideas.md","permalink":"/2024-01-14-project-ideas/"}
+date: 2024-01-14
+week: 2
 ---
-
 Date: Sunday, January 14, 2024
 # Work Undertaken Summary
 - Read Idea's guidance and forum guidance
@@ -14,10 +14,9 @@ Date: Sunday, January 14, 2024
 Not Applicable
 
 # Time Spent
-| Top Level        | Second Level                                    | Time    | Progress (%) this week est |
-| ---------------- | ----------------------------------------------- | ------- | -------------------------- |
-| [[TMA01\|TMA01]] | [[Tasks/TMA01/Initial Ideas\|Initial Ideas]] | 5 hours | 100                        |
-
+  - task: "[[Initial Ideas]]"
+    time: 5 hours
+    progress: 100
 
 # Questions for Tutor
 Not Applicable

@@ -1,7 +1,7 @@
 ---
-{"publish":true,"path":"2024-02-07 Initial Project Ideas Form.md","permalink":"/2024-02-07-initial-project-ideas-form/"}
+date: 2024-02-07
+week: 2
 ---
-
 Date: Wednesday, Feb 7, 2024
 # Work Undertaken Summary
 - Decide on which project idea to progress
@@ -10,10 +10,9 @@ Date: Wednesday, Feb 7, 2024
 Not Applicable
 
 # Time Spent
-| Top Level        | Second Level                                          | Time               | Progress (%) this week est |
-| ---------------- | ----------------------------------------------------- | ------------------ | -------------------------- |
-| [[TMA01\|TMA01]] | [[Tasks/TMA01/Project Proposal\|Project Proposal]] | 1 hour, 15 minutes | 20                         |
-
+  - task: "[[Project Proposal]]"
+    time: 1.25 hours
+    progress: 20
 
 # Questions for Tutor
 Thoughts on the idea.
@@ -23,23 +22,7 @@ TMA01 Tutorial
 
 # Raw Notes
 
-
-<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/2024-01-14-project-ideas/#reasoning" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
-
-
-
-# Reasoning
-I am prefering the LLM project because:
-
-1) Requires learning a new domain / skill - more to write about
-2) Requires academic reading
-3) Requires more analysis, e.g. comparing results against each other.
-4) Useful for work, social benefit there
-5) Can be turned into a work knowledge share / talk
-6) Has clear stakeholders
-
-</div></div>
-
+![[2024-01-14 Project Ideas#Reasoning]]
 
 ## Document
 Please complete the following template and email it back to me

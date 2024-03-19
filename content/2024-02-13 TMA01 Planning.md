@@ -1,7 +1,7 @@
 ---
-{"publish":true,"path":"2024-02-13 TMA01 Planning.md","permalink":"/2024-02-13-tma-01-planning/"}
+date: 2024-02-13
+week: 7
 ---
-
 Date: Tuesday, February 13, 2024
 # Work Undertaken Summary
 - Document Logbook choices
@@ -18,13 +18,18 @@ Publishing straight using quartz has the problem that the dataview plugin isn't 
 Thankfully this week a new tool called quartz-syncer was released that allows the queries to be run and baked in prior to publishing.
 
 # Time Spent
-| Top Level                                    | Second Level                                                          | Time               | Progress (%) this week est |
-| -------------------------------------------- | --------------------------------------------------------------------- | ------------------ | -------------------------- |
-| [[TMA01\|TMA01]]                             | [[Tasks/TMA01/Log Book\|Log Book]]                                 | 6 hours            | 80                         |
-| [[TMA01\|TMA01]]                             | [[Tasks/TMA01/Blog Setup\|Blog Setup]]                             | 3 hours            | 100                        |
-| [[Recurring Tasks\|Recurring Tasks]]         | [[Tasks/Recurring Tasks/Tutorials\|Tutorials]]                     | 3 hours            | 20                         |
-| [[Data Transformation\|Data Transformation]] | [[Tasks/Data Transformation/Retrieve Database\|Retrieve Database]] | 1 hour, 30 minutes | 100                        |
-
+  - task: "[[Log Book]]"
+    time: 6 hours
+    progress: 80
+  - task: "[[Blog Setup]]"
+    time: 3 hours
+    progress: 100
+  - task: "[[Tutorials]]"
+    time: 3 hours
+    progress: 20
+  - task: "[[Retrieve Database]]"
+    time: 1.5 hours
+    progress: 100
 
 # Questions for Tutor
 N/A
@@ -91,7 +96,7 @@ The artefact is:
 
 ## Importing the data
 Exported a bacpac from sql azure. Ran into a problem with importing it locally as my sql server instance didn't have contained database authentication enabled (which we use for replicating the production db / fail overs.)
-![Pasted image 20240218184508.png](/img/user/media/Pasted%20image%2020240218184508.png)
+![[import-database-issues.png]]
 
 [Enable SQL Server Contained Database Authentication (kodyaz.com)](https://www.kodyaz.com/sql-server-2014/enable-contained-database-authentication-on-sql-server.aspx)
 
@@ -110,94 +115,7 @@ Completion time: 2024-02-18T18:45:49.8038654+00:00
 [Using Dataview on Obsidian Publish · joschua.io](https://joschua.io/posts/2023/09/01/obsidian-publish-dataview/)
 
 
+![[2024-02-11 TMA01 Tutorial]]
 
-<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
-
-
-
-Tutorial recordings are available at: [TM470-24B Online tutor group room Meeting Recordings | OU online (open.ac.uk)](https://learn2.open.ac.uk/mod/connecthosted/viewrecordings.php?id=2217281&group=374810)
-
-
-![Pasted image 20240211081001.png](/img/user/tutorials/media/Pasted%20image%2020240211081001.png)
-
-The tables are referring to the study guide.
-
-![Pasted image 20240211081150.png](/img/user/tutorials/media/Pasted%20image%2020240211081150.png)
-6-7 major tasks, with maybe smaller tasks
-
-missed one
-![Pasted image 20240211082008.png](/img/user/tutorials/media/Pasted%20image%2020240211082008.png)
-![Pasted image 20240211082018.png](/img/user/tutorials/media/Pasted%20image%2020240211082018.png)
-Developing a strategy to X
-
-![Pasted image 20240211082100.png](/img/user/tutorials/media/Pasted%20image%2020240211082100.png)
-Data requirements - talk about format. Permissions around use of data.
-
-![Pasted image 20240211082331.png](/img/user/tutorials/media/Pasted%20image%2020240211082331.png)
-For each task, consider the associated risk. 
-![Pasted image 20240211082638.png](/img/user/tutorials/media/Pasted%20image%2020240211082638.png)
-![Pasted image 20240211082743.png](/img/user/tutorials/media/Pasted%20image%2020240211082743.png)
-![Pasted image 20240211082937.png](/img/user/tutorials/media/Pasted%20image%2020240211082937.png)
-![Pasted image 20240211083021.png](/img/user/tutorials/media/Pasted%20image%2020240211083021.png)Project Plan is a visual representation of the project.
-
-Use Colour Coding. Maybe have a % system. and colour code based on that.
-![Pasted image 20240211083532.png](/img/user/tutorials/media/Pasted%20image%2020240211083532.png)
-Have lots of little subtasks, makes it easy to carry out.
-
-This is talking about phases and tasks [Planning and Organising a Project | OU online (open.ac.uk)](https://learn2.open.ac.uk/mod/oucontent/view.php?id=2217339)
-
-
-![Pasted image 20240211083938.png](/img/user/tutorials/media/Pasted%20image%2020240211083938.png)
-Amanda strongly recommends going to the using the library lecture, 28th Febb.
-
-![Pasted image 20240211084118.png](/img/user/tutorials/media/Pasted%20image%2020240211084118.png)
-
-Amanda only teaches TM470.
-![Pasted image 20240211084429.png](/img/user/tutorials/media/Pasted%20image%2020240211084429.png)
-
-MS Word can format references for you?!?
-
-![Pasted image 20240211084811.png](/img/user/tutorials/media/Pasted%20image%2020240211084811.png)
-Amanada suggests contacting once a fortnight, with a briefing of where you are up to.
-
-YOU ARE MARKED ON IF YOU ARE ENGAGING WITH YOUR TUTOR
-
-![Pasted image 20240211085042.png](/img/user/tutorials/media/Pasted%20image%2020240211085042.png)
-![Pasted image 20240211085316.png](/img/user/tutorials/media/Pasted%20image%2020240211085316.png)
-
-![Pasted image 20240211085405.png](/img/user/tutorials/media/Pasted%20image%2020240211085405.png)
-The marks are based on the learning objectives on the websites.
-![Pasted image 20240211085540.png](/img/user/tutorials/media/Pasted%20image%2020240211085540.png)
-![Pasted image 20240211085553.png](/img/user/tutorials/media/Pasted%20image%2020240211085553.png)
-![Pasted image 20240211085627.png](/img/user/tutorials/media/Pasted%20image%2020240211085627.png)
-
-Explain the coding approach, its interfaces. etc. Show a section of code to illistrate. Go to a section in the appendix with 1 example. Explain that its a single section and e.g. practicallity. And the rest can be seen here with a github.
-
-They don't check their emails every day. They check them every couple of days.
-
-</div></div>
-
-
-
-<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
-
-
-
-![Pasted image 20240213103416.png](/img/user/tutorials/media/Pasted%20image%2020240213103416.png)
-Blended project, Its going to be a development (make the llm, train etc) and evaluation project
-![Pasted image 20240213104257.png](/img/user/tutorials/media/Pasted%20image%2020240213104257.png)
-Time for today:
-35:20 watching tutorial
-4.5 hours of setting up stuff with data view.
-
-# Project Plan
-Gives you aims.
-
-![Pasted image 20240221134215.png](/img/user/tutorials/media/Pasted%20image%2020240221134215.png)
-Other things: America trip, concerts.
-
-
-
-</div></div>
-
+![[2024-02-13 Welcome Tutorial]]
 
