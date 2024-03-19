@@ -9,20 +9,20 @@ Investigate Grounding vs FineTuning AI models.
 
 
 # Time Spent
-1.75hrs risk register
-0.5hr microsoft grounding paper.
-0.35hr on stack overflow llm blogpost.
-0.35 logbook deployment.
-25 minutes project schedule
-10 minutes tutor email
-25 minutes ollama langchain
-1.35 hrs on literature search
-1.25 hrs 1.58 bit llm paper
-1 hr on TMA
-1 hr on Mendeley and importing all my references
-15 minutes OU resources
-4.75 hours on TMA01
-7 hours on TMA01
+- 1.75hrs risk register
+- 0.5hr microsoft grounding paper.
+- 0.35hr on stack overflow llm blogpost.
+- 0.35 logbook deployment.
+- 25 minutes project schedule
+- 10 minutes tutor email
+- 25 minutes ollama langchain
+- 1.35 hrs on literature search
+- 1.25 hrs 1.58 bit llm paper
+- 1 hr on TMA
+- 1 hr on Mendeley and importing all my references
+- 15 minutes OU resources
+- 4.75 hours on TMA01
+- 7 hours on TMA01
 # Questions for Tutor
 N/A
 

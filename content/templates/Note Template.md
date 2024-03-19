@@ -1,34 +1,17 @@
 ---
 date: <% moment(tp.file.creation_date()).format("YYYY-MM-DD")%>
 week: <% moment(tp.file.creation_date()).weeks() %>
-time:
-  - task: "[[Server OS Install]]"
-    time: 0 hours
-    progress: 5
-  - task: "[[Bi Weekly tutor Updates]]"
-    time: 0 hours
-    progress: 7
-publish: false
+draft: true
 ---
 Date: <% moment(tp.file.creation_date()).format("dddd, MMMM DD, YYYY") %>
 # Work Undertaken Summary
 
 
-# Problems encountered and how you overcame them
+# Risks
 
 
 # Time Spent
-```dataview
-TABLE WITHOUT ID
-link(meta(entry.task.top-level-task).subpath) As "Top Level",
-entry.task as "Second Level",
-entry.time As "Time",
-entry.progress as "Progress (%) this week est"
-WHERE time != null
-WHERE file = this.file
-flatten time as entry
-sort date desc
-```
+
 
 # Questions for Tutor
 
