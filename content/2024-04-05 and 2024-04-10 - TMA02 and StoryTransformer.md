@@ -241,14 +241,17 @@ classDiagram
     class StorySerializer {
         -IStoryFormatter formatter
         -StoryTagger[] taggers
-        +StorySerializer(formatter, taggers)
+        -IStoryPseudoAnonymizer[] anonymizers
+        +StorySerializer(formatter, taggers, anonymizers)
         +SerializeAsync(outputFolder, workCard, cardIndex)
         -CreateFileContentAsync(workCard)
-        -GenerateTagsAsync(workCard, content)
+        -GenerateTagsAsync(workCard, content) string[]
+        -GeneratePseudoAnonymizedContentAsync(content) string
     }
 
     StorySerializer o-- IStoryFormatter
     StorySerializer o-- "*" IStoryTagger
+    StorySerializer o-- "*" IStoryPseudoAnonymizer
 
     class IStoryFormatter {
         +Format(WorkCard workCard) string
@@ -268,7 +271,7 @@ classDiagram
 
     IStoryFormatter <|.. MarkdownStoryFormatter : implements
 
-class IStoryTagger {
+    class IStoryTagger {
         +AddTagsAsync(ITagCollection tags, WorkCard workCard, string content)
     }
 
@@ -286,6 +289,28 @@ class IStoryTagger {
 
     IStoryTagger <|.. KeywordTagger : implements
     IStoryTagger <|.. FeatureTagger : implements
+
+    class IStoryPseudoAnonymizer {
+        +PseudoAnonymizeAsync(string content)
+    }
+
+    <<interface>> IStoryPseudoAnonymizer
+
+    class RegexAnonymizer {
+        -RegexAnonymizer(AnonymizationRule[] rules)
+        -AnonymizationRule[] rules
+        +CreateAsync(string fileName)
+        +AddTagsAsync(ITagCollection tags, WorkCard workCard, string content)
+    }
+
+    IStoryPseudoAnonymizer <|.. RegexAnonymizer : implements
+
+    class AnonymizationRule {
+        +Regex Regex
+        +string Replacement
+    }
+
+    RegexAnonymizer o-- "*" AnonymizationRule
 
 
     class ITagCollection {
