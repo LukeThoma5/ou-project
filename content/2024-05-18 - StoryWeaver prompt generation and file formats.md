@@ -1,7 +1,7 @@
 ---
 date: 2024-05-18
 week: 20
-draft: true
+draft: false
 ---
 Date: Saturday, May 18, 2024
 # Work Undertaken Summary
