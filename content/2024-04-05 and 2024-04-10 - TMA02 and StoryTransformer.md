@@ -287,8 +287,15 @@ classDiagram
         +AddTagsAsync(ITagCollection tags, WorkCard workCard, string content)
     }
 
+    class TimescaleTagRemover {
+        +TimescaleTagRemover()
+        +AddTagsAsync(ITagCollection tags, WorkCard workCard, string content)
+    }
+
     IStoryTagger <|.. KeywordTagger : implements
     IStoryTagger <|.. FeatureTagger : implements
+    IStoryTagger <|.. TimescaleTagRemover : implements
+
 
     class IStoryPseudoAnonymizer {
         +PseudoAnonymizeAsync(string content)
@@ -314,15 +321,19 @@ classDiagram
 
 
     class ITagCollection {
-        +string[] Tags
+        +Collection~string~ Tags
         +AddTag(string tag)
+        +RemoveTag(string tag)
     }
     <<interface>> ITagCollection
 
     class TagCollection {
+        -Set~string~ _tags
+        -Set~string~ _removedTags
         +TagCollection()
-        +string[] Tags
+        +Collection~string~ Tags
         +AddTag(string tag)
+        +RemoveTag(string tag)
     }
 
 
