@@ -1,7 +1,7 @@
 ---
 date: 2024-06-15
 week: 24
-draft: true
+draft: false
 ---
 Date: Saturday, June 15, 2024
 # Work Undertaken Summary
