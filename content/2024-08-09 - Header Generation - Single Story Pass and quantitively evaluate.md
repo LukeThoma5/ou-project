@@ -1033,7 +1033,7 @@ I've ran the final generation of the documentation, created the revised version 
 
 'All' that is left is a little bit of code clean-up and an awful lot of report writing. I'm sure I'll be in touch with questions regarding the EMA in the coming weeks.
 
-My latest project logbook is available at:
+My latest project logbook is available at: https://ou-project.4man.dev/2024-08-09---Header-Generation---Single-Story-Pass-and-quantitively-evaluate
 
 Best Regards,
 Luke
